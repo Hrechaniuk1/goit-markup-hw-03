@@ -9,11 +9,31 @@ body {
 
 ul {
         list-style-type: none;
+        margin: 0;
+        padding-left: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+img {
+    display: block;
+    margin-bottom: 32px;
 }
 
 a {
         text-decoration: none;
         font-style: normal;
+        display: inline-block;
+}
+
+.container {
+    max-width: 1158px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 156px;
+    margin-right: 156px;
 }
 
 .page-title {
@@ -32,7 +52,9 @@ a {
         line-height: 1.2;
         font-weight: 500;
         letter-spacing: 0.02em;
+        margin-bottom: 8px;
 }
+
 
 .description {
     font-size: 16px;
@@ -41,7 +63,21 @@ a {
     letter-spacing: 0.02em;
 }
 
-/* section-1 */
+
+/* header */
+
+.head-container {
+    display: flex;
+    gap: 332px;
+    border-bottom: 1px solid var(--CORNFLOWER, #E7E9FC);
+}
+
+nav {
+    display: flex;
+    gap: 76px;
+}
+
+
 
 .site-logo {
     color: var(--IRIS, #4D5AE5);
@@ -51,6 +87,8 @@ a {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    padding-top: 25.5px;
+    padding-bottom: 25.5px;
 }
 
 
@@ -62,12 +100,20 @@ a {
     color: var(--CLOUD, #F4F4FD);
 }
 
-.main-navigation {
+.main-navigation-list {
+    display: flex;
+    gap: 40px;
     color: var(--NAVY-BLUE, #2E2F42);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.main-navigation {
+    color: currentColor;
 }
 
 .main-navigation:active,
@@ -81,7 +127,14 @@ a {
     font-style: normal;
 }
 
+.info ul {
+    display: flex;
+    gap: 40px;
+}
+
 .info-link {
+    padding-top: 24px;
+    padding-bottom: 24px;
     font-weight: 400;
     font-style: normal;
     font-size: 16px;
@@ -99,8 +152,11 @@ a {
 
 /* section-1-main */
 
+
 .service {
     background: var(--NAVY-BLUE, #2E2F42);
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
 
 .first-title {
@@ -115,11 +171,17 @@ a {
 .service-button {
     cursor: pointer;
     background: var(--IRIS, #4D5AE5);
-    font-family: "Roboto", sans-serif;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: #ffffff;
+    padding: 16px 32px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 48px;
 }
 
 .service-button:hover, .service-button:focus {
@@ -136,8 +198,23 @@ a {
 
 /* section-2-features */
 
+.visually-hidden {
+    display: none;
+}
+
 .features {
     background: #FFF;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.features ul {
+    display: flex;
+    gap: 24px;
+}
+
+.features ul>li {
+    flex-grow: calc((100% - 72px) / 4);
 }
 
 
@@ -145,80 +222,72 @@ a {
 
 .team {
     background: var(--CLOUD, #F4F4FD);
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
+
+.team ul {
+    display: flex;
+    gap: 24px;
+    padding-top: 72px;
+}
+
 
 .team-box {
-    background-color: #FFFFFF
-}
-
-.team-member-1 {
+    background-color: #FFFFFF;
     text-align: center;
-        
+    flex-grow: calc((100% - 72px) / 4);
+    padding-bottom: 32px;
+    
 }
 
 
-
-.team-member-2 {
-    text-align: center;
-}
-
-.team-member-3 {
-    text-align: center;
-}
-
-.team-member-4 {
-    text-align: center;
-}
-
-.team-member-position-1 {
-    text-align: center;
-}
-
-
-.team-member-position-2 {
-    text-align: center;
-}
-
-.team-member-position-3 {
-    text-align: center;
-}
-
-.team-member-position-4 {
-    text-align: center;
-}
 
 
 /* section-4-portfolio */
 
 .portfolio {
     background: #FFF;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.portfolio ul {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin-top: 72px;
+}
+
+.portfolio ul>li {
+    flex-grow: calc((100% - 48px) / 3);
+    border: 1px solid var(--CORNFLOWER, #E7E9FC);
+    padding-bottom: 32px;
 }
 
 
-.portfolio-picture-1 {
+
+.portfolio-picture {
     flex-shrink: 0;
 }
 
-.portfolio-picture-2 {
-    flex-shrink: 0;
-}
-.portfolio-picture-3 {
-    flex-shrink: 0;
-}
-.portfolio-picture-4 {
-    flex-shrink: 0;
-}
-.portfolio-picture-5 {
-    flex-shrink: 0;
-}
-.portfolio-picture-6 {
-    flex-shrink: 0;
-}
 
 /* footer */
 
 footer {
     background: var(--NAVY-BLUE, #2E2F42);
+    padding-top: 101.5px;
+    padding-bottom: 100px;
+}
+
+.foot-info {
+    width: 264px;
+    height: 72px;
+}
+
+footer .site-logo {
+    margin-bottom: 17.5px;
+    padding: 0;
 }
 
 .foot-description {
