@@ -19,7 +19,6 @@ h1, h2, h3, h4, h5, h6, p {
 
 img {
     display: block;
-    margin-bottom: 32px;
 }
 
 a {
@@ -53,6 +52,7 @@ a {
         font-weight: 500;
         letter-spacing: 0.02em;
         margin-bottom: 8px;
+        padding-top: 32px;
 }
 
 
@@ -261,16 +261,29 @@ nav {
 
 .portfolio ul>li {
     flex-grow: calc((100% - 48px) / 3);
-    border: 1px solid var(--CORNFLOWER, #E7E9FC);
-    padding-bottom: 32px;
 }
 
+.app-description .description {
+    padding-bottom: 32px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.app-description h3 {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.app-description {
+    border-left:1px solid var(--CORNFLOWER, #E7E9FC);
+    border-bottom: 1px solid var(--CORNFLOWER, #E7E9FC);
+    border-right: 1px solid var(--CORNFLOWER, #E7E9FC);
+}
 
 
 .portfolio-picture {
     flex-shrink: 0;
 }
-
 
 /* footer */
 
