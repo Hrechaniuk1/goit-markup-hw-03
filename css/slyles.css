@@ -66,6 +66,10 @@ a {
     letter-spacing: 0.02em;
 }
 
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
 
 
 
@@ -193,7 +197,7 @@ nav {
     background-color: var(--OCEAN, #404BBF);;
 }
 
-.service-button span {
+.service-button > span {
     color: var(--WHITE, #FFF);
         font-size: 16px;
         font-weight: 500;
@@ -209,16 +213,16 @@ nav {
 
 .features {
     background: #FFF;
-    padding-top: 120px;
-    padding-bottom: 120px;
 }
 
 .features ul {
     display: flex;
     gap: 24px;
-}
+} 
 
-.features ul>li {
+
+
+.features ul li {
     flex-grow: calc((100% - 72px) / 4);
 }
 
@@ -227,8 +231,6 @@ nav {
 
 .team {
     background: var(--CLOUD, #F4F4FD);
-    padding-top: 120px;
-    padding-bottom: 120px;
 }
 
 .team ul {
@@ -254,8 +256,6 @@ nav {
 
 .portfolio {
     background: #FFF;
-    padding-top: 120px;
-    padding-bottom: 120px;
 }
 
 .portfolio ul {
@@ -265,7 +265,7 @@ nav {
     margin-top: 72px;
 }
 
-.portfolio ul>li {
+.portfolio ul li {
     flex-grow: calc((100% - 48px) / 3);
 }
 
