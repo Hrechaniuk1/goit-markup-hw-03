@@ -211,9 +211,9 @@ nav {
     display: none;
 }
 
-.features {
+/* .features {
     background: #FFF;
-}
+} */
 
 .features ul {
     display: flex;
@@ -254,9 +254,9 @@ nav {
 
 /* section-4-portfolio */
 
-.portfolio {
+/* .portfolio {
     background: #FFF;
-}
+} */
 
 .portfolio ul {
     display: flex;
