@@ -18,42 +18,40 @@
   </head>
   <body>
     <!-- heder -->
-    <header>
+    <header class="head">
       <!-- menu -->
-      <div class="container">
-        <div class="head-container">
-          <nav>
-            <a class="site-logo" href="./index.html"
-              >Web
-              <span class="logo-one">Studio</span>
-            </a>
-            <ul class="main-navigation-list">
-              <li>
-                <a class="main-navigation" href="./index.html">Studio</a>
-              </li>
-              <li>
-                <a class="main-navigation" href="">Portfolio</a>
-              </li>
-              <li>
-                <a class="main-navigation" href="">Contacts</a>
-              </li>
-            </ul>
-          </nav>
-          <address class="info">
-            <ul>
-              <li>
-                <a class="info-link" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
-              </li>
-              <li>
-                <a class="info-link" href="tel:+110001111111"
-                  >+11 (000) 111-11-11</a
-                >
-              </li>
-            </ul>
-          </address>
-        </div>
+      <div class="container head-container">
+        <nav class="main-nav">
+          <a class="site-logo" href="./index.html"
+            >Web
+            <span class="logo-one">Studio</span>
+          </a>
+          <ul class="main-navigation-list">
+            <li>
+              <a class="main-navigation" href="./index.html">Studio</a>
+            </li>
+            <li>
+              <a class="main-navigation" href="">Portfolio</a>
+            </li>
+            <li>
+              <a class="main-navigation" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="info">
+          <ul class="address-list">
+            <li>
+              <a class="info-link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a class="info-link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
       </div>
     </header>
 
@@ -62,10 +60,7 @@
       <!-- section-1-main -->
       <section class="section service">
         <div class="container">
-          <h1 class="first-title">
-            Effective Solutions <br />
-            for Your Business
-          </h1>
+          <h1 class="first-title">Effective Solutions for Your Business</h1>
           <button class="service-button" type="button">
             <span>Order Service</span>
           </button>
@@ -75,30 +70,30 @@
       <section class="section features">
         <div class="container">
           <h2 class="visually-hidden">Advantages</h2>
-          <ul>
-            <li>
-              <h3 class="name">Strategy</h3>
+          <ul class="features-list">
+            <li class="feature-list-item">
+              <h3 class="name features-title">Strategy</h3>
               <p class="description">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
             </li>
-            <li>
-              <h3 class="name">Punctuality</h3>
+            <li class="feature-list-item">
+              <h3 class="name features-title">Punctuality</h3>
               <p class="description">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
             </li>
-            <li>
-              <h3 class="name">Diligence</h3>
+            <li class="feature-list-item">
+              <h3 class="name features-title">Diligence</h3>
               <p class="description">
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
               </p>
             </li>
-            <li>
-              <h3 class="name">Technologies</h3>
+            <li class="feature-list-item">
+              <h3 class="name features-title">Technologies</h3>
               <p class="description">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
@@ -120,8 +115,10 @@
                 width="264"
                 height="260"
               />
-              <h3 class="name">Mark Guerrero</h3>
-              <p class="description">Product Designer</p>
+              <div class="team-member">
+                <h3 class="name team-name">Mark Guerrero</h3>
+                <p class="description team-description">Product Designer</p>
+              </div>
             </li>
             <li class="team-box">
               <img
@@ -131,9 +128,12 @@
                 width="264"
                 height="260"
               />
-              <h3 class="name">Tom Ford</h3>
-              <p class="description">Frontend Developer</p>
+              <div class="team-member">
+                <h3 class="name team-name">Tom Ford</h3>
+                <p class="description team-description">Frontend Developer</p>
+              </div>
             </li>
+
             <li class="team-box">
               <img
                 class="team-picture-3"
@@ -142,8 +142,10 @@
                 width="264"
                 height="260"
               />
-              <h3 class="name">Camila Garcia</h3>
-              <p class="description">Marketing</p>
+              <div class="team-member">
+                <h3 class="name team-name">Camila Garcia</h3>
+                <p class="description team-description">Marketing</p>
+              </div>
             </li>
             <li class="team-box">
               <img
@@ -153,8 +155,10 @@
                 width="264"
                 height="260"
               />
-              <h3 class="name">Daniel Wilson</h3>
-              <p class="description">UI Designer</p>
+              <div class="team-member">
+                <h3 class="name team-name">Daniel Wilson</h3>
+                <p class="description team-description">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -162,9 +166,9 @@
       <!-- section-4-portfolio -->
       <section class="section portfolio">
         <div class="container">
-          <h2 class="page-title">Our Portfolio</h2>
-          <ul>
-            <li>
+          <h2 class="page-title portfolio-title">Our Portfolio</h2>
+          <ul class="portfolio-list">
+            <li class="portfolio-list-item">
               <img
                 class="portfolio-picture"
                 width="360"
@@ -249,17 +253,17 @@
 
     <!-- footer -->
     <footer class="page-foot">
-      <div class="container">
+      <div class="container foot-container">
         <a class="site-logo" href="./index.html"
           >Web
           <span class="logo-two">Studio</span>
         </a>
-        <div class="foot-info">
-          <p class="foot-description">
-            Increase the flow of customers and sales for your business with
-            digital marketing & growth solutions.
-          </p>
-        </div>
+        <!-- <div class="foot-info"> -->
+        <p class="foot-description">
+          Increase the flow of customers and sales for your business with
+          digital marketing & growth solutions.
+        </p>
+        <!-- </div> -->
       </div>
     </footer>
   </body>
